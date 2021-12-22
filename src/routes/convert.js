@@ -66,7 +66,7 @@ function convert(req,res,next) {
     {
         ffmpegParams.outputOptions=[
             '-codec:v libx264',
-            '-profile:v high',
+            '-profile:v main',
             '-r 15',
             '-crf 23',
             '-preset ultrafast',
@@ -77,6 +77,9 @@ function convert(req,res,next) {
             '-threads 8',
             '-codec:a libfdk_aac',
             '-b:a 128k',
+            '-movflags +faststart',
+            '-vf format=yuv420p'
+            
         ];
     }
 
