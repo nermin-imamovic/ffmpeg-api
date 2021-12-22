@@ -31,4 +31,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: 0.4:latest
+          tags: nerminimamovic/ffmpeg-api:latest
