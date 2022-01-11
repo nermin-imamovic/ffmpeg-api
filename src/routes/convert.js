@@ -69,6 +69,7 @@ function convert(req,res,next) {
             '-profile:v main',
             '-r 15',
             '-crf 23',
+            '--no-delay',
             '-preset ultrafast',
             '-b:v 500k',
             '-maxrate 500k',
